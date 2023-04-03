@@ -6,8 +6,9 @@ public:
         
         //dp[i] : maximum you can earn at day i
         //for day j < i, buy with prices[j] and sell with (dp[j - 1] + prices[i] - prices[j] - fee)
-        //dp[i] = max(dp[j - 1] + prices[i] - prices[j] - fee)
+        //dp[i] = max(dp[j - 1] + prices[i] - prices[j] - fee) => for 0 <= j < i
         
+        //reorder
         //((dp[j - 1] - prices[j] - fee)  + prices[i])
         
         //fixed i
